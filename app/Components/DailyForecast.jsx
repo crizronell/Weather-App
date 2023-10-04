@@ -7,7 +7,7 @@ function DailyForecast({ Dailyforecast }) {
         3 Days's Forecast
       </h2>
       <div className="p-4">
-        {Dailyforecast.map((item, key) => (
+        {Dailyforecast.map((item) => (
           <div className="flex items-center justify-between text-white ">
             <Image
               src={`https://${item.day.condition.icon}`}

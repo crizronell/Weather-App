@@ -93,7 +93,7 @@ function Highlights({ airQuality, temperature, dayLight }) {
             {Day.map((item) => (
               <>
                 {item.icon}
-                <div>
+                <div key={item.icon}>
                   <h1>{item.text}</h1>
                   <p>{item.data}</p>
                 </div>
@@ -107,7 +107,7 @@ function Highlights({ airQuality, temperature, dayLight }) {
         {Temp.map((item) => (
           <div
             className=" text-white rounded-xl bg-card drop-shadow-xl"
-            key={item.id}>
+            key={item.text}>
             <p className="font-serif p-2">{item.text}</p>
             <div className="flex items-center justify-between ml-[1.5rem] ">
               {item.icon}
