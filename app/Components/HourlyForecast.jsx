@@ -12,7 +12,7 @@ function HourlyForecast({ forecast }) {
             <p>{item.time.slice(11, 16)}</p>
             <Image
               className="mx-auto"
-              src={`https://${item.condition.icon}`}
+              src={`https:${item.condition.icon}`}
               width={100}
               height={100}
               alt="icon"

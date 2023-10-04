@@ -10,7 +10,7 @@ function DailyForecast({ Dailyforecast }) {
         {Dailyforecast.map((item) => (
           <div className="flex items-center justify-between text-white ">
             <Image
-              src={`https://${item.day.condition.icon}`}
+              src={`https:${item.day.condition.icon}`}
               width={75}
               height={75}
               alt="icon"

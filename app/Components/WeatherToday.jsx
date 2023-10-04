@@ -16,7 +16,7 @@ function WeatherToday({ location }) {
 
         <div className="mr-[2.5rem]">
           <Image
-            src={`https://${location.current.condition.icon}`}
+            src={`https:${location.current.condition.icon}`}
             width={75}
             height={75}
             alt="icon"

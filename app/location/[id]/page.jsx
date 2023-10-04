@@ -47,6 +47,7 @@ async function getWeather({ params }) {
   const Forecast = await getHourlyForecast();
   const ForecastDaily = await getDailyForecast();
   const length = Object.keys(Weather).length;
+  console.log(Weather.current.condition.icon);
 
   return (
     <>
